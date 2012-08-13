@@ -27,8 +27,6 @@ token=`curl --data-binary @$filename \
        -H 'User-Agent: CompressAndSendSource ('$username')' \
        https://basecamp.com/$company_id/api/v1/attachments.json | sed -e 's/[{}]/''/g'`
 
-bash: line 1: Attackment: command not found
-
 #Add the uploaded file to the project's uploads
 curl  -H 'Content-Type: application/json' \
     -H 'User-Agent: CompressAndSendSource ('$username')' \
